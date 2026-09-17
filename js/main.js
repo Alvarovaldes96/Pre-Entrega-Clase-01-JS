@@ -21,8 +21,10 @@ console.log("Ingresa tu altura para calcular la distancia de salto:", altura, re
 // 3°er dato
 alert("¿Crees estar descansado/a?");
 let horasDeDescanso = parseFloat(prompt("Ingresa la cantidad de horas que duermes para identificar si estás bien descansado/a."));
-const bienDescansado = [6, 7, 8, 9, 10];
-const malDescansado = [1, 2, 3, 4, 5];
-const estaBienDescansado = bienDescansado.includes(horasDeDescanso);
+const bienDescansado = 6;
+const malDescansado = 5;
+let estaBienDescansado = horasDeDescanso >= bienDescansado;
+let estaMalDescansado = horasDeDescanso <= malDescansado;
+
 console.log("Ingresa la cantidad de horas que duermes para identificar si estás bien descansado/a:", horasDeDescanso, estaBienDescansado);
 
